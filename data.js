@@ -31,7 +31,7 @@ const posts = [
     {
         "postId": 2,
         "date": "July 30, 2025",
-        "image": "asset/post1",
+        "image": "assets/post2",
         "title": "My first coding experience",
         "content": "AI'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
         "featured": false,
@@ -39,7 +39,7 @@ const posts = [
     {
         "postId": 3,
         "date": "May 02, 2025",
-        "image": "asset/post1",
+        "image": "assets/post1",
         "title": "All about HTML",
         "content": "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
         "featured": false,
@@ -47,7 +47,7 @@ const posts = [
     {
         "postId": 4,
         "date": "July 23, 2022",
-        "image": "asset/post1",
+        "image": "assets/post4",
         "title": "The beauty in CSS",
         "content": "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
         "featured": false,
@@ -55,7 +55,7 @@ const posts = [
     {
         "postId": 5,
         "date": "July 23, 2022",
-        "image": "asset/post1",
+        "image": "assets/post5",
         "title": "Loving JavaScript all the way",
         "content": "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
         "featured": false,
@@ -63,7 +63,7 @@ const posts = [
     {
         "postId": 6,
         "date": "July 23, 2022",
-        "image": "asset/post1",
+        "image": "assets/post6",
         "title": "My new journey as a bootcamp student.",
         "content": "After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.",
         "featured": false,
@@ -72,3 +72,5 @@ const posts = [
 ]
 
 export { posts };
+
+// export { posts };

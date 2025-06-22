@@ -19,7 +19,7 @@
  */
 
 
-export const posts = [
+const posts = [
     {
         "postId": 1,
         "image": "asset/post1",
@@ -70,3 +70,5 @@ export const posts = [
     }
     
 ]
+
+export { posts };

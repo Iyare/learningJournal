@@ -6,7 +6,6 @@ const posts = fetch("./data.json")
     }
     return response.json();
 }).then(data => {
-    // data = JSON.parse(data);
     console.log(data)
     return data;
 }).catch(error => {

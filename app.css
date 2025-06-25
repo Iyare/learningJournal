@@ -1,4 +1,62 @@
-*  {
-    margin: 0;
-    
+:root {
+    --main-font: "Source Sans 3", sans-serif;
+    --logo-font: "Roboto", sans-serif;
+    --white: #fff;
+    --black: #505050;      
 }
+
+
+/* *  {
+    margin: 0;
+} */
+
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+.container {
+    max-width: ;
+}
+
+#logo-container {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    /* max-width: 250px; */
+    
+    img {
+        max-width: 35px;
+        height: auto;
+    }
+}
+
+#logo-text {
+    font-family: var(--logo-font);
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+ ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.5rem;
+    
+    ul {
+        display:  flex;
+        list-style-type: none;
+                
+        li {
+            margin-left: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+}
+
+/* #hero {
+    background-image: ;
+} */

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Learning Journal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
     <script type="module" src="app.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <div id="logo">
-                <img src="#" alt="Journal logo">
+            <div id="logo-container">
+                <img src="/assets/logo.png" alt="Journal logo">
                 <span id="logo-text">My learning journal</span>
             </div>
             <div id="menu-items">
@@ -20,37 +30,39 @@
                 </ul>
             </div>
         </nav>
-        
+
     </header>
-    
+
     <main>
         <section id="hero">
             <div id="hero-text">
                 <span class="date">July 23, 2025</span>
                 <h1>My new journey as a bootcamp student.</h1>
                 <p>
-                    After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
+                    After several months of learning in the Frontend Developer Career Path, I've made the big jump over
+                    to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
                 </p>
             </div>
 
         </section>
         <section>
-           
+
             <article>
                 <span class="date"></span>
                 <h1 id="heading"></h1>
                 <p id="content"></p>
             </article>
-      
+
         </section>
     </main>
-    
+
     <footer>
         <div>
             <span>My Learning Journal</span>
             <span>Copyright &copy; 2024</span>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

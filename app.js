@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 const posts = fetch("./data.json")
 .then(response => {
     if (!response.ok) {
@@ -12,4 +12,3 @@ const posts = fetch("./data.json")
     console.error("There was a problem with the fetch operation", error)
 });
 
-console.log(posts)

@@ -2,9 +2,14 @@
     --main-font: "Source Sans 3", sans-serif;
     --logo-font: "Roboto", sans-serif;
     --white: #fff;
-    --black: #505050;      
+    --dark-gray: #505050; 
+    --black: #202020;   
+    --bold: 600;  
 }
 
+.bold {
+    font-weight: var(--bold);
+}
 
 body {
     font-family: var(--main-font);
@@ -14,7 +19,8 @@ body {
 
 .container {
     max-width: 380px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 1.5em;
 }
 
@@ -81,6 +87,7 @@ nav {
         }
         p {
             font-size: 1.1rem;
+            font-weight: 400;
         }
         span {
             text-transform: uppercase;
@@ -89,3 +96,51 @@ nav {
     }
 }
 
+article {
+    margin: 2em 0;
+    
+    img{
+        width: 100%;
+        border-radius: 5px;
+        padding-bottom: 1em;
+    }
+    .date {
+        text-transform: uppercase;
+        /* font-size: 1rem; */
+    }
+    h2, p {
+        margin: 0.4em 0 ;
+    }
+    h2 {
+        font-weight: 700;
+        /* font-size: 1.5rem; */
+    }
+    p {
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+}
+
+article:last-of-type{
+    padding-bottom: 2em;
+}
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 2em 0;
+    
+    .text-content{
+
+        span {
+            display:  block;
+            
+        }
+        .copy {
+            font-size: 0.9rem;
+            
+        }
+    }
+}

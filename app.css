@@ -98,7 +98,7 @@ nav {
 
 article {
     margin: 2em 0;
-    
+   
     img{
         width: 100%;
         border-radius: 5px;
@@ -116,7 +116,7 @@ article {
     }
     p {
         font-size: 1.15rem;
-        font-weight: 200;
+        font-weight: 300;
         color: var(--dark-gray);
     }
 }

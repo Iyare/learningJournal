@@ -1,7 +1,7 @@
 const articlesContainer = document.querySelector("#articles");
 const imageBaseUrl = "assets/post"
 
-
+// Get the data file
 fetch("./data.json")
     .then(response => {
         if (!response.ok) {
@@ -11,6 +11,7 @@ fetch("./data.json")
         }
     })
     .then(data => { 
+        // iterate over the data
         data.forEach((post,index) => {
             // create an article element
             const article = document.createElement("article");
@@ -42,19 +43,5 @@ fetch("./data.json")
         })
     })
     
-
-/* Workflow
-1. Create an "article element"
-2. Add the class "container" to the  element
-3. Create an image element and point the source attribute the the corresponding image in the assets folder.
-4. add an "alt" attribute to correspond with the title of the post
-5. Create a span tag and add a class called "date" to the tage
-6. Create a h2 tag and add the content of the post inside the heading.
-7. Create a paragraph tag and add the respective content from the post object. 
-8. append all other tags sequentially to the article tag.
-9. Render the article tag.
-
- */
-
 
 

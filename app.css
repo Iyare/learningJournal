@@ -15,13 +15,14 @@ body {
     font-family: var(--main-font);
     font-size: 16px;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 .text-center {
     text-align: center;
@@ -71,34 +72,37 @@ p {
 }
 
 
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px; 
     font-size: 1rem;  
+    padding: 1em 0;
     
     ul {
-        display:  flex;
+        display: flex;
+        gap: 0.5em;
+        justify-content: space-around;
         list-style-type: none;
-        flex-wrap: nowrap;
-        
+        /* flex-wrap: nowrap; */
+
         li {
             text-transform: uppercase;
             font-weight: 500;
-            padding-left: 1em;
         }
     }
+    
     a {
         text-decoration: none;
+        
     }
     
     a:link, a:active {
         color: var(--black);
     }
-    a:hover {
-        background-color: bisque;
+    li:hover {
+        border-bottom: 3px solid #ffae0094;
+       
     }
     a:visited {
         color: var(--black);
@@ -113,12 +117,15 @@ nav {
     background-position: 40% 50%;
     color: var(--white);
     display: flex;
+    justify-content: start;
     align-items: end;
     min-height: 350px;
     
     #hero-text{
         display: flex;
         flex-direction: column;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         padding-bottom: 1.5em;
         
         p, span {
@@ -193,6 +200,10 @@ footer {
         }
     }
 }
+
+
+
+/* for screens wider than 746px */
 @media screen and (min-width: 746px) {
     .container {
        max-width: 1200px;
@@ -200,6 +211,14 @@ footer {
     
     .image.portrait{
         max-width: 250px;
+    }
+    
+    nav {
+        ul{
+            gap: 3em;
+            
+        }
+        
     }
     #hero{
         margin-left: 0;
@@ -210,12 +229,13 @@ footer {
         
     }
     .intro-post {
-        max-width: 1000px;
+        /* max-width: 1000px; */
         margin-left: auto;
         margin-right: auto;
     }
     .intro-post.about-me {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         gap: 1.5em;
         padding-top: 2em;

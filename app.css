@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 380px;
+    
     margin-left: auto;
     margin-right: auto;
     padding: 0 1.5em;
@@ -36,7 +36,14 @@ body {
     border-radius: 10px;
 }
 
+.image.portrait {
+    border-radius: 50%;
+    max-width: 50%;
+ }
 
+h1 {
+    line-height: 1.1;
+}
 h2 {
     font-weight: 700;
 }
@@ -112,7 +119,6 @@ nav {
     #hero-text{
         display: flex;
         flex-direction: column;
-        padding-left: 1.3em;
         padding-bottom: 1.5em;
         
         p, span {
@@ -141,7 +147,7 @@ article {
     img{
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 8px;
         margin-bottom: 1em;
     }
     
@@ -186,4 +192,26 @@ footer {
             
         }
     }
+}
+@media screen and (min-width: 746px) {
+    .container {
+       max-width: 1200px;
+    }
+    
+    #hero{
+        margin-left: 0;
+    }
+    
+    #hero-text{
+        max-width: 700px;
+        
+    }
+    
+    #articles {
+        display: grid;
+        gap: 2em;
+        /* grid-template-columns: auto-fit, minmax(100px, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr))
+    }
+
 }

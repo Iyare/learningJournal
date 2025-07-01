@@ -85,8 +85,8 @@ nav {
     }
     a {
         text-decoration: none;
-        
     }
+    
     a:link, a:active {
         color: var(--black);
     }

@@ -1,6 +1,6 @@
 const articlesContainer = document.querySelector("#articles");
 const imageBaseUrl = "assets/post"
-
+const header = document.quer
 // Get the data file
 fetch("./data.json")
     .then(response => {
